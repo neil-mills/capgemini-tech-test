@@ -1,6 +1,13 @@
 Capgemini Tech Test
 ==============================
 
+To run the project
+--------
+
+Clone the repo, then cd into the project root directory.
+npm install
+npm run start
+
 Notes
 --------
 
