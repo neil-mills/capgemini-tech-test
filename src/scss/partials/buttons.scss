@@ -1,0 +1,30 @@
+@import '../variables/variables';
+.button {
+  display: inline-block;
+  position: relative;
+  background-color: $brand-green;
+  color: $white;
+  text-align: center;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 43px;
+  padding: 0 10px;
+  line-height: 43px;
+  font-family: $transport-new-light;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: darken($brand-green,5%);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: $black;
+  }
+}

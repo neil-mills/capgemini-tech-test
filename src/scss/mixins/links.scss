@@ -1,0 +1,21 @@
+@import '../../scss/variables/variables';
+
+@mixin link($colour:"blue", $underline:"true") {
+  transition: color 0.2s ease-in-out;
+  text-decoration: underline;
+  cursor: pointer;
+  @if($colour == "blue") {
+    color: $brand-blue;
+    &:hover {
+      color: lighten($brand-blue, 10%);
+    }
+  } @else {
+    color: $grey;
+    &:hover {
+      color: darken($grey, 20%);
+    }
+  }
+  @if($underline == "true") {
+    text-decoration: underline
+  }
+}

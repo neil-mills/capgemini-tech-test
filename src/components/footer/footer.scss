@@ -1,0 +1,97 @@
+@import '../../scss/variables/variables';
+@import '../../scss/mixins/mixins';
+
+.footer {
+  background-color: $light-grey;
+  padding: 20px 0 30px;
+  color: $grey;
+  &__content {
+    display: block;
+    font-size: 0;
+  }
+  &__column {
+    @include font-size-small;
+    display: block;
+    width: 100%;
+  }
+}
+.footer-copyright {
+  display: inline-block;
+  width: 100%;
+  padding: 115px 0 0;
+  @include link('grey');
+  background: url('../../images/govuk-crest.png') center top no-repeat;
+  background-size: 125px 102px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+  &__list {
+    @include clearfix;
+    @include reset-list;
+  }
+  &__item {
+    float: left;
+    padding: 0 20px 0 0;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  &__link {
+    @include link('grey');
+  }
+}
+.licence {
+  display: block;
+  position: relative;
+  &__text,
+  &__logo {
+    display: block;
+  }
+  &__logo {
+    @include hide-text;
+    width: 43px;
+    height: 17px;
+    background: url('../../images/ogl.png') left top no-repeat;
+    background-size: 100% auto;
+    position: relative;
+  }
+  &__text {
+    line-height: 17px;
+  }
+  &__link {
+    @include link('grey');
+  }
+}
+
+@include screen-bigger-than($screen-tablet) {
+  .footer {
+    padding: 74px 0 60px;
+    &__column {
+      display: inline-block;
+      &--left {
+        width: 80%;
+        padding-right: 20px;
+      }
+      &--right {
+        width: 20%;
+        text-align: right;
+      }
+    }
+  }
+  .licence {
+    padding-left: 55px;
+    &__logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+}

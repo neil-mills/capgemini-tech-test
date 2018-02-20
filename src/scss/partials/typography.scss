@@ -1,0 +1,15 @@
+@import '../variables/variables';
+h1,
+h2 {
+  font-family: $transport-new-heavy;
+  font-weight: normal;
+  margin: $heading-spacing 0;
+  line-height: $line-height-heading;
+}
+h1 {
+  letter-spacing: -1px;
+  margin: $heading-spacing*2 0;
+}
+p {
+  margin: $paragraph-spacing 0;
+}

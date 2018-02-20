@@ -1,0 +1,16 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+.link {
+  &--blue {
+    @include link;
+  }
+  &--grey {
+    @include link('grey')
+  }
+}
+
+.help-link {
+  @include font-size-small;
+}

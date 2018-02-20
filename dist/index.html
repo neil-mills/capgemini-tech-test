@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capgemini Tech Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/main.css" rel="stylesheet"></head>
+<body>
+  <header class="header" role="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header-logo">
+          <a href="#" class="header-logo__link" title="HM Revenue &amp; Customs">
+            <svg className="header-logo__svg" viewBox="0 0 240 30">
+              <use xlink:href="#hmrc"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main container" role="main">
+    <h1 class="no-tm">Renew your tax credits</h1>
+    <h2>Your details</h2>
+    <form name="your-details" class="form">
+      <div class="form-group">
+        <label for="nationalInsuranceNumber" class="form-label">
+          <span class="form-label__text">Your National insurance number</span>
+          <a class="form-label__help" data-help>Show me where to find this</a>
+        </label>
+        <input type="text" name="nationalInsuranceNumber" id="nationalInsuranceNumber" required tabindex="1">
+        <div class="help-panel" data-active="false">
+          <p>Your tax credits renewal number is the 15 digit number on the bottom right hand corner of your annual declaration. Enter it below.</p>
+          <p><img src="dist/images/tax-credits-number.jpg" width="279" height="157" alt="Your tax renewal number"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="taxCreditsRenewalNumber" class="form-label">
+          <span class="form-label__text">Your tax credits renewal number</span>
+        </label>
+        <input type="text" name="taxCreditsRenewalNumber" id="taxCreditsRenewalNumber" tabindex="2">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="button" tabindex="3">Next</button>
+      </div>
+    </form>
+    <a href="#" title="Get help with this page" class="help-link link--grey">Get help with this page</a>
+  </main>
+  <footer class="footer" role="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__column footer__column--left">
+          <menu class="footer-menu">
+            <ul class="footer-menu__list no-tm">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link" title="Cookies">Cookies</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link" title="Cookies">Privacy policy</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link" title="Cookies">Terms and conditions</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link" title="Cookies">Help using GOV UK</a></li>
+            </ul>
+          </menu>
+          <div class="licence">
+            <a href="#" class="licence__logo" title="Open Government Licence" target="_blank">
+              Open Government Licence
+            </a>
+            <p class="licence__text no-bm">All content is available under the <a href="" class="licence__link" target="_blank" title="Open Government Licence v3.0">Open Government Licence v3.0</a>. except where otherwise stated</p>
+          </div>
+        </div>
+        <div class="footer__column footer__column--right">
+          <a href="#" class="footer-copyright">
+            &copy; Crown Copyright
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="/index.js"></script></body>
+</html>

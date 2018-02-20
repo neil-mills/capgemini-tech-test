@@ -1,0 +1,68 @@
+@import '../../scss/variables/variables';
+@import '../../scss/mixins/mixins';
+.form-group {
+  margin-bottom: $paragraph-spacing;
+}
+input[type='text'] {
+  display: block;
+  background-color: $lightest-grey;
+  line-height: 1;
+  padding: 2px 6px 4px;
+  border-width: 2px 1px 1px 2px;
+  border-color: $keyline-grey;
+  border-style: solid;
+  outline: none;
+  text-align: start;
+  text-shadow: none;
+  font-family: $transport-new-light;
+  font-weight: normal;
+}
+.form-error {
+  &__msg {
+    font-family: $transport-new-medium;
+    color: $brand-green;
+  }
+}
+.form-group {
+  display: block;
+  margin: 0 0 40px;
+  &--half-bm {
+    margin-bottom: 20px;
+  }
+  &[data-hidden] {
+    display: none;
+  }
+}
+.form-label {
+  @include clearfix;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  &__text,
+  &__help {
+    display: block;
+  }
+  &__text {
+    font-family: $transport-new-medium;
+    margin-bottom: 10px;
+  }
+  &__help {
+    @include font-size($font-size-small);
+    @include link;
+  }
+}
+
+@include screen-bigger-than( $screen-tablet ) {
+  .form-label {
+    &__text,
+    &__help {
+      display: inline-block;
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+    &__help {
+      margin-left: 40px;
+    }
+  }
+}
